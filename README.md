@@ -7,4 +7,4 @@ INSTALLATION:
 
 FOR MAC USERS:
 =
-*  'export CLASSPATH=${CLASSPATH}:/yourfilelocation'
+*  `export CLASSPATH=${CLASSPATH}:/yourfilelocation`
