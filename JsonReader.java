@@ -8,6 +8,7 @@ import java.nio.charset.Charset;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 public class JsonReader {
 
@@ -34,7 +35,21 @@ public class JsonReader {
 
   public static void main(String[] args) throws IOException, JSONException {
     JSONObject json = readJsonFromUrl("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys");
-    System.out.println(json.toString());
-    // System.out.println(json.get("id"));
+    // System.out.println(json.toString());
+    // System.out.println(json.get("query"));
+     // JSONObject queryObject = json.get("query");
+    JSONObject queryObject= json.getJSONObject("query");
+    JSONObject resultsObject = queryObject.getJSONObject("results");
+    JSONObject channelObject = resultsObject.getJSONObject("channel");
+    JSONObject itemObject = channelObject.getJSONObject("item");
+    // JSONArray forecastArray = itemObject.getJSONArray("forecast");
+    JSONArray forecastArray = itemObject.getJSONArray("forecast");
+    JSONObject day1 = forecastArray.getJSONObject(0);
+    String day1High = day1.getString("high");
+    String day1Low = day1.getString("low");
+
+     System.out.println(day1High);
+     System.out.println(day1Low);
+
   }
 }
