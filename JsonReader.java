@@ -48,8 +48,13 @@ public class JsonReader {
     String day1High = day1.getString("high");
     String day1Low = day1.getString("low");
 
-     System.out.println(day1High);
-     System.out.println(day1Low);
+    JSONArray forecastArray = itemObject.getJSONArray("forecast");
+    JSONObject day2 = forecastArray.getJSONObject(1);
+    String day2High = day1.getString("high");
+    String day2Low = day1.getString("low");
+
+     System.out.println(day2High);
+     System.out.println(day2Low);
 
   }
 }
