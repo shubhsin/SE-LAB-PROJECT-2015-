@@ -8,3 +8,8 @@ INSTALLATION:
 FOR MAC USERS:
 =
 *  `export CLASSPATH=${CLASSPATH}:/yourfilelocation`
+
+
+FOR WINDOWS USERS:
+=
+Coming soon
