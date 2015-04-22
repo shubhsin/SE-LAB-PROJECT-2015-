@@ -1,5 +1,8 @@
 #JSON Parse in JAVA
 
+This application was made for Software Engineering Lab Project. 
+4th Semester I.T. in MIT,Manipal
+
 INSTALLATION:
 ==
 * Add the json-simple-1.1.1.jar file to list of environment variable in CLASSPATH
