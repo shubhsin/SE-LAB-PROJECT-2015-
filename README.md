@@ -5,7 +5,8 @@ This application was made for Software Engineering Lab Project.
 
 Screenshots
 ==
-![Init Screen](https://raw.githubusercontent.com/shubhsin/SE-LAB-PROJECT-2015-/branch/path/to/InitScreen.tiff)
+![Init Screen](https://github.com/shubhsin/SE-LAB-PROJECT-2015-/raw/master/InitScreen.tiff)
+![Weather Screen](https://raw.githubusercontent.com/shubhsin/SE-LAB-PROJECT-2015-/master/WeatherScreen.tiff)
 
 INSTALLATION:
 ==
